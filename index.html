@@ -55,15 +55,15 @@
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                       <div class="indicator">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
-                        <span class="badge badge-sm indicator-item">8</span>
+                        <span id="cart-count" class="badge badge-sm indicator-item">10</span>
                       </div>
                     </div> 
                     <div
                       tabindex="0"
                       class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
                       <div class="card-body">
-                        <span class="text-lg font-bold">8 Items</span>
-                        <span class="text-info">Subtotal: $999</span>
+                        <span id="total-count" class="text-lg font-bold">20 Items</span>
+                        <span id="" class="text-info">Subtotal:$  <span id="total-sum">999</span></span>
                         <div class="card-actions">
                           <button class="btn bg-[#00B583] btn-block">View cart</button>
                         </div>
@@ -124,10 +124,10 @@
  
           <!-- Banner Part -->
         <section class="banner  flex flex-col lg:flex-row lg:justify-between gap-8 w-11/12 container mx-auto my-10">
-        <div class="left-part  lg:w-[70%] lg:h-[1200px] flex items-center justify-center ">
+        <div class="left-part  lg:w-[70%] lg:h-[1000px] flex items-center justify-center ">
             <div class="hero ">
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img src="https://cdn.pixabay.com/photo/2024/03/05/14/55/ai-generated-8614707_1280.jpg" class="max-w-sm rounded-lg"/>
+                    <img src="https://cdn.pixabay.com/photo/2024/03/05/14/55/ai-generated-8614707_1280.jpg" class="lg:max-w-sm rounded-lg"/>
                   <div>
                     <h1 class="text-5xl font-bold">Plant for Sale</h1>
                     <p class="py-6">
@@ -138,7 +138,7 @@
                 </div>
               </div>
         </div>
-        <div class="right-part  lg:w-[28%] gap-5 lg:h-[800px] flex lg:flex-col  justify-between mb-5">
+        <div class="right-part  lg:w-[28%] gap-5 lg:h-[1000px] lg:flex lg:flex-col  justify-between mb-5">
             <div class="card rounded-2xl p-6 border border-gray-200">
                 <h2 class="text-xl font-bold text-gray-800">Special Discount</h2>
                 <p class="text-gray-600 mt-2">
@@ -186,7 +186,13 @@
           </p>
         </h2>
   
-        <section id="product-container" class="w-11/12 mx-auto py-10 grid grid-cols-3 gap-5"></section>
+        <section id="product-container" class="w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+    
+        </section>
       </main>
+      <script src="./js/script.js"></script>
+      <script src="./js/data.js"></script>
 </body>
 </html>
+
